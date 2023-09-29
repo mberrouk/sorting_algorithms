@@ -26,16 +26,17 @@ void insertion_sort_list(listint_t **list)
 		return;
 	while (head)
 	{
-		tmp = head;
-		if (head->n > head->next->n)
+		tmp = head->next;
+		if (head->next && head->n > head->next->n)
 		{
-			while (tmp->n > tmp->next->n)
+			head = head->next;
+			while (tmp->prev && tmp->prev->n > tmp->n)
 			{
-				swap_nodes(list, tmp, tmp->next);
-				tmp = tmp->prev;
+				swap_nodes(list, tmp->prev, tmp);
 				print_list(*list);
 			}
 		}
-		head = head->next;
+		else
+			head = head->next;
 	}
 }
