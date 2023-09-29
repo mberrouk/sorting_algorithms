@@ -32,9 +32,9 @@ void insertion_sort_list(listint_t **list)
 	listint_t *head;
 	listint_t *tmp;
 
-	head = *list;
 	if (!list || !*list || !(*list)->next)
 		return;
+	head = *list;
 	while (head)
 	{
 		tmp = head->next;
