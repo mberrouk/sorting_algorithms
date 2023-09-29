@@ -1,6 +1,13 @@
 #include "sort.h"
 
-void swap_nodes(listint_t **list, listint_t *big, listint_t *sml){
+/**
+ * swap_nodes - swap 2 nodes in listint_t
+ * @list: doubly linked list
+ * @big: first element
+ * @sml: second element
+ */
+void swap_nodes(listint_t **list, listint_t *big, listint_t *sml)
+{
 	listint_t *tmp;
 
 	tmp = sml->next;
@@ -16,6 +23,10 @@ void swap_nodes(listint_t **list, listint_t *big, listint_t *sml){
 	big->prev = sml;
 }
 
+/**
+ * insertion_sort_list - sorts a listint_t using Insertion sort algorithm
+ * @list: doubly linked list
+ */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *head;
