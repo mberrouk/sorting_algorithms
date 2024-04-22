@@ -2,12 +2,6 @@
 
 This repository contains the solutions for the "0x1B. C - Sorting algorithms & Big O" project in the ALX program. The project focuses on implementing various sorting algorithms in the C programming language and analyzing their time complexity using Big O notation.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Sorting Algorithms](#sorting-algorithms)
-- [Big O Notation](#big-o-notation)
-
 ## Introduction
 
 Sorting algorithms are essential tools in computer science and software development. They allow us to arrange elements in a specific order, such as ascending or descending, which is crucial for efficient searching and data manipulation. This project explores different sorting algorithms and their performance characteristics.
